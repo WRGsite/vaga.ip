@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="Website Wrg" content="my site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lembot.css" type="text/css" media="all" />
+    <script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript" charset="utf-8">
+         
+      </script>
+    <title>WRG | {{ $title }}</title>
+  </head>
+  <body>
+      <nav class="hander-menu">
+        <button class="button button-menu" type="submit">
+            <span class="fa be fa-bars" style="font-size:5vw;"></span>
+        </button>
+        <button class="menu-login right">
+            <li class=""><i class="fa fa-id-badge"></i><a class="link-dark" href="/login">login</a></li>
+        </button>
+        <ul class="menu-to hiden">
+            <button class="menu-dif" type="submit"><span class="fa fa-close"></span></button>
+            <li class="menu"><a class="link" href="/">Home</a></li>
+            <li class="menu"><a class="link" href="/about">About</a></li>
+            <li class="menu"><a class="link" href="/posts">Blog</a></li>
+            <li class="menu"><a class="link" href="/categoris">category</a></li>
+        </ul>
+      </nav>
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+       $(".button-menu").click(function(){
+          $(".menu-to").removeClass("hiden");
+          $(".menu-to").addClass("slidedown");
+       });
+       $(".menu-dif").click(function(){
+           $(".menu-to").addClass("hiden");
+       });
+    });
+    </script>
+    <div class="des">
+          shjshshshshshsh
+      </div>
+  </body>
+</html>
